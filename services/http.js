@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 const baseUrl = "http://api.weatherapi.com/v1"
 

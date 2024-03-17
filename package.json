@@ -4,7 +4,7 @@
   "description": "A weather API to fetch latest weather data for different cities",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "jest"
   },
   "author": "Khalid Sharafaldeen",

@@ -3,6 +3,8 @@
 This project is built using Node.js and Express framework. I used the MVC (Model-View-Controller) design pattern for structuring the application's architecture. This pattern helps separate concerns and organize the code structure.
 The API I chose for this assignment is [WeatherAPI](https://www.weatherapi.com/). It is free to use and has excellent documentation and endpoints to use.
 
+**I deployed the API to Heroku and you can use it and test it with the following link: [My Weather API](https://my-weather-api-8d713ffb699d.herokuapp.com). Refer to this document to see the endpoints the API supports.**
+
 ### Endpoint: GET /weather/:city
 Retrieves the current weather for a specified city.
 ### Request Format
@@ -20,7 +22,6 @@ Retrieves the current weather for a specified city.
   }
 }
 ```
-
 
 ### Brief explanation
 - For all the first 3 tasks, I created a middleware that takes requests coming to the parent route `/weather` and redirects to different controllers based on the requested child route.
@@ -123,7 +124,9 @@ Based on my understanding of this task, the requirement was to create a web page
 
 This task sounds more like a client-side and front-end task. Instead of creating a normal webpage using vanilla HTML, I opted to create a front-end web app using the React.js framework that acts as the Web Socket client. This web app includes a `/live-radar` route that establishes a connection to my backend and receives live weather data. The data is then rendered on the map of Saudi Arabia, with coordinates for every city with periodic updates for the weather data, similar to the example provided in the assignment.
 
-I deployed the web app that subscribes to the backend. It can be visited from this link: [Weather Map App](insert_link_here)
+**I deployed the web app that subscribes to the backend to Vercel hosting platform. It can be visited from this link: [Weather Map App](https://weather-map-app-pink.vercel.app/live-radar)**
+
+Github repository for the web app: https://github.com/Loody170/Weather-Map-App
 
 ### Testing
 

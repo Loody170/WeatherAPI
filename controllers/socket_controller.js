@@ -7,7 +7,9 @@ const { fetchCitiesWeather } = require('../services/http');
 const getLiveWeatherData = async () => {
     const io = getIO();
     let count = 0;
-    io.on('connection', socket => {
+    const liveWeatherEndpoint = io.of('/weather/live');
+
+    liveWeatherEndpoint.on('connection', socket => {
         console.log('New client connected');
         // Keep track of the number of clients connected
         count++;
